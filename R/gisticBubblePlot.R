@@ -55,7 +55,7 @@ gisticBubblePlot = function(gistic = NULL, color = NULL, markBands = NULL, fdrCu
   }
 
   par(mar = c(4, 3, 3, 2))
-  bubble_plot(plot_dat = g, lab_dat = g.labs, x_var = "nSamples", y_var = "pos",
+  bubble_plot(plot_dat = g, lab_dat = g.labs, x_var = "nSamples", y_var = "nGenes",
                   bubble_var = "log_q", text_var = "lab", col_var = "color", return_dat = FALSE)
   mtext(text = "# Samples", side = 1, line = 2)
   if(log_y){
